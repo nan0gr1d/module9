@@ -9,5 +9,5 @@ print(first_result)
 second_result = [(x, y) for y in second_strings for x in first_strings if len(x) == len(y)]
 print(second_result)
 first_strings.extend(second_strings)
-third_result = {x: len(x) for x in list(first_strings)}
+third_result = {x: len(x) for x in list(first_strings) if len(x) % 2 == 0}
 print(third_result)
